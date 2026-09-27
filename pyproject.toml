@@ -1,0 +1,32 @@
+[project]
+name = "task-management-api"
+version = "0.1.0"
+description = "A production-oriented task management API built with FastAPI"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { 
+        name = "Michael Alula",
+        email= "michaelalula05@gmail.com"
+    }
+]
+
+dependencies = [
+    "fastapi[standard]",
+    "sqlalchemy[asyncio]",
+    "asyncpg",
+    "pydantic-settings",
+]
+
+[project.optional-dependencies]
+dev = [
+    
+]
+
+[tool.setuptools]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+asyncio_default_fixture_loop_scope = "function"
