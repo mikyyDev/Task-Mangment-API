@@ -5,18 +5,15 @@ description = "A production-oriented task management API built with FastAPI"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
-authors = [
-    { 
-        name = "Michael Alula",
-        email= "michaelalula05@gmail.com"
-    }
-]
+authors = [{ name = "Michael Alula", email = "michaelalula05@gmail.com" }]
 
 dependencies = [
     "fastapi[standard]",
     "sqlalchemy[asyncio]",
     "asyncpg",
     "pydantic-settings",
+    "alembic",
+
 ]
 
 [project.optional-dependencies]
